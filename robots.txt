@@ -1,42 +1,100 @@
-# Indique aux robots que toutes les pages peuvent être explorées, sauf restrictions spécifiées
+# Robots.txt Optimized for 2025 - Engineered for Market Leadership
+# Tailored for the UK, AI, Google AI, Voice Assistants, and Cutting-Edge SEO
+# Website: https://clairvoyancemedium.github.io/darkspellprotection.github.io/
+# Last Updated: 09/03/2025 14:00 GMT
+# Note: Validate with Google Search Console and robotstxt.org
+
+##########################
+# General Permissions    #
+##########################
 User-agent: *
-Disallow: /admin/
-Disallow: /tmp/
+Disallow: /private/          # Private directories (e.g., admin, scripts)
+Disallow: /temp/             # Temporary folders
+Disallow: /*?*               # Prevent duplicate content (URL parameters)
+Allow: /*.css$               # CSS for seamless rendering (inherited by all)
+Allow: /*.js$                # Essential JS (inherited by all)
+Allow: /*.pdf$               # Strategic PDFs (e.g., spiritual guides)
+Allow: /                     # Default permission
+
+########################################
+# Googlebot (including Google AI 2025) #
+########################################
+User-agent: Googlebot
+Disallow: /private/
+Disallow: /temp/
+Allow: /rituals/
+Allow: /protection/
+Allow: /spell-cleansing/
+
+###########################################
+# Voice Assistants                        #
+###########################################
+User-agent: Googlebot-Voice
+Disallow: /private/
+Disallow: /temp/
+Allow: /faq/
+Allow: /simple-rituals/
+Allow: /spiritual-tips/
+User-agent: Amazonbot        # Hypothetical for Alexa
+Disallow: /private/
+Disallow: /temp/
+Allow: /faq/
+Allow: /spiritual-tips/
+User-agent: Applebot         # Hypothetical for Siri
+Disallow: /private/
+Disallow: /temp/
+Allow: /faq/
+Allow: /spiritual-tips/
+
+###########################################
+# Bing (UK Market beyond Google)          #
+###########################################
+User-agent: Bingbot
+Disallow: /private/
+Disallow: /temp/
+
+#################################
+# Blocking Unwanted Bots        #
+#################################
+User-agent: AhrefsBot
+Disallow: /
+User-agent: SemrushBot
+Disallow: /
+User-agent: MJ12bot
+Disallow: /
+
+##################################################
+# Google Partners and Analyzers                 #
+##################################################
+User-agent: Mediapartners-Google
+Disallow: /private/
+User-agent: AdsBot-Google
 Disallow: /private/
 
-# Bloquer des URL avec paramètres inutiles pour l'indexation
-Disallow: /*?debug=true
-Disallow: /*?preview=true
+##################################################
+# Emerging AI Crawlers (Anticipation for 2025)  #
+##################################################
+User-agent: xAI-Crawler
+Disallow: /private/
+User-agent: OpenAI-Crawler
+Disallow: /private/
+User-agent: AnthropicBot
+Disallow: /private/
+User-agent: Qwantify         # UK and European focus
+Disallow: /private/
 
-# Permettre les fichiers nécessaires au bon affichage et fonctionnement
-Allow: /css/
-Allow: /js/
-Allow: /images/
+##################################################
+# Advanced Optimization (Mobile-First)           #
+##################################################
+User-agent: Googlebot-Mobile
+Disallow: /private/
+Disallow: /temp/
+Allow: /rituals/
+Allow: /protection/
+Allow: /spell-cleansing/
 
-# Référencement des ressources multimédias
-Allow: *.png
-Allow: *.jpg
-Allow: *.webp
-Allow: *.css
-Allow: *.js
-
-# Fournir le chemin du fichier sitemap pour une meilleure indexation
-Sitemap: https://www.clairvoyancemedium.com/sitemap.xml
-
-# Autorisation pour les robots Google et Bing pour maximiser les campagnes publicitaires
-User-agent: Googlebot
-Allow: /
-User-agent: AdsBot-Google
-Allow: /
-User-agent: Bingbot
-Allow: /
-
-# Bloquer les robots nuisibles ou non désirés
-User-agent: BadBot
-Disallow: /
-User-agent: EvilScraper
-Disallow: /
-
-# Empêcher l'exploration des fichiers sensibles
-Disallow: /config/
-Disallow: /backup/
+##################
+# Sitemap and Crawl #
+##################
+Sitemap: https://clairvoyancemedium.github.io/darkspellprotection.github.io/sitemap.xml
+Crawl-delay: 0.5
